@@ -1,11 +1,11 @@
 power_cycle:
+  target:
+    entity:
+      domain:
+        - light
+        - switch
+    device: {}
   fields:
-    entity_id:
-      selector:
-        entity:
-          domain:
-            - light
-            - switch
     power_cycle_delay:
       selector:
         number:

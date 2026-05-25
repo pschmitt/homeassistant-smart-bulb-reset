@@ -32,8 +32,14 @@
     "no_relay_for_light": {
       "message": "No relay is paired with {entity_id}. Add a pairing via the Smart Bulb Reset integration first."
     },
+    "no_relay_for_device": {
+      "message": "No paired relay found for device {device_id}. Add a pairing via the Smart Bulb Reset integration first."
+    },
     "unsupported_entity": {
       "message": "Unsupported entity {entity_id}: expected a light or switch."
+    },
+    "no_target_specified": {
+      "message": "No entity or device was specified. Provide a target entity_id or device_id."
     }
   },
   "options": {
@@ -51,12 +57,8 @@
   "services": {
     "power_cycle": {
       "name": "Power-cycle relay",
-      "description": "Power-cycles the relay that powers a paired smart bulb, or any switch entity directly.",
+      "description": "Power-cycles the relay that powers the target smart bulb. Target can be a paired light entity, a light device, or a switch entity/device directly.",
       "fields": {
-        "entity_id": {
-          "name": "Entity",
-          "description": "The paired smart light (relay resolved automatically) or a switch to cycle directly."
-        },
         "power_cycle_delay": {
           "name": "Power-cycle delay",
           "description": "Seconds to keep the relay off before turning it back on."
