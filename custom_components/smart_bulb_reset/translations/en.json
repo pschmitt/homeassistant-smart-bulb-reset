@@ -54,6 +54,16 @@
       }
     }
   },
+  "entity": {
+    "button": {
+      "power_cycle": {
+        "name": "Power Cycle"
+      },
+      "factory_reset": {
+        "name": "Factory Reset"
+      }
+    }
+  },
   "services": {
     "power_cycle": {
       "name": "Power-cycle relay",

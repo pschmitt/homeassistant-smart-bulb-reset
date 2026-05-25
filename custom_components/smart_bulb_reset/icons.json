@@ -1,3 +1,13 @@
 {
-  "integration": "mdi:lightbulb-auto"
+  "integration": "mdi:lightbulb-auto",
+  "entity": {
+    "button": {
+      "power_cycle": {
+        "default": "mdi:restart"
+      },
+      "factory_reset": {
+        "default": "mdi:restore"
+      }
+    }
+  }
 }
